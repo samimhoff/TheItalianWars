@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import { Map } from './components/map/Map';
-import { MapsKey } from '../hidden/apikeys';
+import { MapsKey } from './hidden/apikeys';
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import './App.css';
 

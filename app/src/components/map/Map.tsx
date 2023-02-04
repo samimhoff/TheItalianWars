@@ -1,11 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
-import { MapsKey } from '../../../hidden/apikeys';
+import { MapsKey } from '../../hidden/apikeys';
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import { fornovoLocations } from '../../data/battles';
+import { CromwellPikeman, CrossedSwords, ElizabethanSoldier, SwissPikeman } from '../../svgs/svgComponents';
+import { GiMountedKnight } from 'react-icons/gi'
 
 
-import './App.css';
+import '../../App.css';
 
 export const Map = () => {
     const location = {
@@ -40,7 +42,7 @@ export const Map = () => {
                 fornovoLocations.map(item => {
                     return (
                     // <Marker key={item.name} position={item.location}/>
-                    <Marker title={item.name} icon={item.icon} position={item.location}/>
+                    <Marker title={item.name} label={item.label}  position={item.location}/>
                     )
                 })
             }
