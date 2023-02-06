@@ -4,7 +4,6 @@ frontend:
     # IMPORTANT - Please verify your build commands
     prebuild:
       commands:
-        - cd app
         - npm install env-cmd
         - npm ci
     build:
@@ -13,9 +12,9 @@ frontend:
         - npm run build:$BUILD_ENV
   artifacts:
     # IMPORTANT - Please verify your build output directory
-    baseDirectory: app/build
+    baseDirectory: build
     files:
       - '**/*'
   cache:
     paths: 
-      - app/node_modules/**/*
+      - node_modules/**/*
