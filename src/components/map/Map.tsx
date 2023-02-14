@@ -3,7 +3,6 @@ import logo from './logo.svg';
 import { MapsKey } from '../../hidden/apikeys';
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import { fornovoLocations } from '../../data/battles';
-import { CromwellPikeman, CrossedSwords, ElizabethanSoldier, SwissPikeman } from '../../svgs/svgComponents';
 import { GiMountedKnight } from 'react-icons/gi'
 
 
